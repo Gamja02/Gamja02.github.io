@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=Inria+Serif:wght@400&display=swap');
+
+/* nav bar */
+
+header {
+  background-color: white;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  justify-content: center;
+}
+
+.headerContainer {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+    margin: 0 auto;
+}
+
+.logo {
+  font-family: 'Inria Serif', serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  transition: color 0.3s, border-bottom 0.3s; /* Add border transition */
+  border-bottom: 3px solid transparent; /* Initial border style */
+  padding: 5px 0;
+}
+
+
+nav a:hover {
+  border-bottom: 3px solid #FF607B; 
+}
+
+/* font */
+
+body {
+  font-family: 'Inria Sans', sans-serif;
+  color: var(--dark-gray)
+}
+
+h1 {
+  font-family: 'Inria Serif', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  
+}
+
+p {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+:root {
+  --light-gray: #F3F3F3;
+  --dark-gray: #313131;
+  --border-gradient: linear-gradient(to right, #F78770, #FF607B);
+  --pink: #FF607B;
+  --text-gray: #515151;
+  --gray: #A2A2A2;
+}
+
+/* Home */
+/* Intro */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  /* padding: 0 3rem; */
+}
+.aboutText {
+  width: 65%;
+  height: auto;
+  margin: 3rem auto;
+}
+.aboutImage {
+  width: 25%;
+  height: auto;
+}
+.aboutImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: top;
+  /* box-shadow: 8px 8px 4px rgba(255, 96, 123, 0.5); */
+}
+
+
+.parentDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+.childDiv {
+  margin: 0.5rem;
+  height: auto;
+  /* border: 4px solid #FF607B; */
+  display: flex;
+  flex-direction: column;
+  box-sizing:border-box;
+}
+
+.textDiv {
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.bigDiv {
+  width: 90%;
+  margin: 3rem auto;
+  /* background-color: var(--light-gray); */
+}
+
+.aboutText h2 {
+  font-weight: 700;
+  margin: 2rem 0;
+  flex: 1;
+}
+
+.smallDiv {
+  width: 45%;
+}
+
+.esri {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* button */
+.buttonDark {
+  width: 20%;
+  background-color: var(--dark-gray);
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 1rem 0;
+   border: 4px solid transparent; /* Initial border */
+  border-image: transparent;
+  border-image-slice: 1;
+  transition: border 0.6s ease;
+}
+
+.buttonDark:hover {
+  border: 4px solid transparent; /* Reset border for transition */
+  border-image: linear-gradient(to right, #F78770, #FF607B);
+  border-image-slice: 1;
+}
+
+.buttonDark a {
+  text-decoration: none;
+  color: white;
+}
+
+.buttonDark:active {
+    opacity: 0.8;
+}
+
+/* Portfolio */
+.childDiv h3 {
+  margin: 0.5rem 0;
+  font-weight: 700;
+}
+
+.childDiv p {
+  margin: 0.3rem 0;
+}
+
+.esri>div {
+  margin-right: 1rem;
+}
+
+.esri p:first-child {
+  margin-bottom: 0.6rem;
+}
+
+.smallDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: top;
+  /* border: 4px solid transparent; 
+  border-image: transparent;
+  border-image-slice: 1;
+  transition: border 0.3s ease; */
+}
+
+.smallDiv:hover {
+  border: 8px solid transparent; 
+  border-image: linear-gradient(to right, #F78770, #FF607B);
+  border-image-slice: 1;
+}
+
+.thumbnail {
+  position:relative;
+  width:100%;
+  height:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+}
+
+.thumbnail:after {
+  content:'';
+  position:absolute;
+  width:100%; height:100%;
+  top:0; left:0;
+  background:rgba(255,255,255,1);
+  opacity:0;
+  transition: all 0.3s ease;
+}
+
+.thumbnail:hover:after {
+  opacity: 1;
+}
+
+.thumbnail p, .thumbnail h1 {
+  position:absolute;
+  color: var(--dark-gray);
+  font-size: 1.5rem;
+  z-index: 99;
+  display: none;
+  margin: 1rem;
+}
+
+.thumbnail:hover p, .thumbnail:hover h1 {
+  display: flex;
+}
+
+
+/* Post */
+.postContainer {
+    width: 80%;
+    max-width: 1440px;
+    padding: 3rem auto;
+    justify-content: center;
+    margin: 0 auto;
+}
+.postContainer p {
+    color: var(--text-gray)
+}
+.postContainer div {
+    box-sizing:border-box;
+}
+.postContainer img {
+    width: 100%;
+    /* max-width: 800px; */
+    margin: 1rem 0;
+    height: auto;
+}
+.spacer {
+    height: 2.5rem;
+}
+
+/* Post thumbnail */
+.postThumbnail {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.postThumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+/* Post summary */
+.projectSummary {
+    margin-bottom: 2rem;
+}
+.projectSummary h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.projectSummary h4 {
+    color: var(--gray);
+    margin-top: 0.5rem;
+}
+
+.postWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.postWrap>div {
+    width: 32%;
+}
+
+/* Challange, solution, persona */
+.fullLightGray {
+    background-color: var(--light-gray);
+}
+.fullChild {
+    padding: 2rem 0;
+}
+
+.fullDarkGray {
+    background-color: var(--dark-gray)
+}
+
+.fullDarkGray h1, .fullDarkGray h2, .fullDarkGray h3, .fullDarkGray h4, .fullDarkGray p {
+    color: var(--light-gray)
+}
+
+.displayWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.solutionImg {
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 2rem auto;
+}
+.solutionImg img {
+    width:73%;
+}
+.solutionText {
+    width: 25%;
+}
+
+.persona {
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+.persona img {
+    width: 30%;
+    min-width: 300px;
+    margin-right: 1.5rem;
+}
+.personaText {
+    width: 65%;
+}
